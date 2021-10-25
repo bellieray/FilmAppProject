@@ -16,7 +16,7 @@ import com.example.filmappproject.databinding.CustomDialogBinding
 import com.example.filmappproject.databinding.CustomDialogNoFileBinding
 import com.example.filmappproject.databinding.FragmentDashboardBinding
 import com.example.filmappproject.model.Film
-import com.example.filmappproject.ui.dashboard.adapters.FilmListViewPagerAdapter
+import com.example.filmappproject.adapters.FilmListViewPagerAdapter
 import com.example.filmappproject.util.getImageFromUrl
 import com.example.filmappproject.util.hideKeyboard
 import com.example.filmappproject.util.submitWithEnterKey
@@ -27,6 +27,8 @@ class DashboardFragment : Fragment() {
     lateinit var mBinding: FragmentDashboardBinding
     private lateinit var viewModel: FilmSearchViewModel
     private val mAdapter: FilmListViewPagerAdapter = FilmListViewPagerAdapter(::setData)
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -79,39 +81,13 @@ class DashboardFragment : Fragment() {
     }
 
     private fun observeData() {
-        viewModel.isLoading.observe(
-            viewLifecycleOwner,
-            {
-        mBinding.isLoading = it
-            }
-        )
+        viewModel.isLoading.observe(viewLifecycleOwner, ::observeIsLoading)
 
-        viewModel.error.observe(
-            viewLifecycleOwner,
-            {
-                if (it) {
-                  showDialog()
-                }
-            }
-        )
+        viewModel.error.observe(viewLifecycleOwner, ::observeError)
 
-        viewModel.movieList.observe(viewLifecycleOwner, {
-            it?.let {
-                mAdapter.submitList(it)
-                if (it.size > 0){
-                    setData(it.first())
-                }
-            }
+        viewModel.movieList.observe(viewLifecycleOwner, ::observeList)
 
-
-        })
-
-        viewModel.isHaveSameData.observe(viewLifecycleOwner,{
-            if(!it){
-                mBinding.isLoading = it
-                showNoDataDialog()
-            }
-        })
+        viewModel.isHaveSameData.observe(viewLifecycleOwner,::observeEmptyData)
     }
 
     private fun setData(film: Film) {
@@ -161,6 +137,40 @@ class DashboardFragment : Fragment() {
             }
             mBinding.dialogDismissButton.setOnClickListener{dialog.dismiss()}
         }
+    }
+
+    private fun observeEmptyData(it: Boolean){
+
+            if(!it){
+                mBinding.isLoading = it
+                showNoDataDialog()
+            }
+
+    }
+
+    private fun observeList(model : List<Film>){
+
+            model?.let {
+                mAdapter.submitList(it)
+                if (it.size > 0){
+                    setData(it.first())
+                }
+
+        }
+
+    }
+
+    private fun observeError(it : Boolean){
+            if (it) {
+                showDialog()
+            }
+
+    }
+
+    private fun observeIsLoading(it : Boolean){
+
+            mBinding.isLoading = it
+
     }
 
 

@@ -29,10 +29,12 @@ fun ImageView.getImageFromUrl(url: String) {
     circularProgressDrawable.start()
     Glide.with(this).load(url).placeholder(circularProgressDrawable).into(this)
 }
+
 fun View.hideKeyboard() {
     val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     imm.hideSoftInputFromWindow(windowToken, 0)
 }
+
 fun submitWithEnterKey(editText: EditText, sendButton: ImageButton) {
     editText.setOnKeyListener { v, keyCode, event ->
 

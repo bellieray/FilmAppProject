@@ -1,9 +1,10 @@
-package com.example.filmappproject.ui.dashboard.adapters
+package com.example.filmappproject.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
+import com.example.filmappproject.adapters.viewholder.FilmCardViewHolder
 import com.example.filmappproject.databinding.ItemFilmCardBinding
 import com.example.filmappproject.model.Film
 

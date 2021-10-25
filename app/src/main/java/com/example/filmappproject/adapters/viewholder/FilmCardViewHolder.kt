@@ -1,4 +1,4 @@
-package com.example.filmappproject.ui.dashboard.adapters
+package com.example.filmappproject.adapters.viewholder
 
 import com.example.filmappproject.databinding.ItemFilmCardBinding
 import com.example.filmappproject.model.Film

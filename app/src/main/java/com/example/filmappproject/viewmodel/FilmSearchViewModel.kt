@@ -34,11 +34,9 @@ class FilmSearchViewModel() : BaseViewModel()
     val isHaveSameData = MutableLiveData<Boolean>()
 
     fun getData( text: String?) {
-
         isLoading.value = true
-
-
         launch {
+            delay(3000)
             withContext(Dispatchers.IO) {
                 val call = ApiClient.getInstance().fetchSearch(text, "1", "2a2e58ee")
                 call.enqueue(object : Callback<Response> {
@@ -46,12 +44,11 @@ class FilmSearchViewModel() : BaseViewModel()
                         call: Call<Response>,
                         response: retrofit2.Response<Response>
                     ) {
-
                         if (response.body() != null && response.body()?.response != "False") {
                             movieList.value = response.body()?.films
                             error.value = false
-                            isLoading.value = false
                             isHaveSameData.value = true
+                            isLoading.value = false
 
                         }
                         else {

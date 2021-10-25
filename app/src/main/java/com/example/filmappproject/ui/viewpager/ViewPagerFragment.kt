@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.filmappproject.adapter.ViewPagerAdapter
+import com.example.filmappproject.adapters.OnBoardingPagerAdapter
 import com.example.filmappproject.databinding.FragmentViewPagerBinding
 import com.example.filmappproject.ui.onboarding.FirstScreen
 import com.example.filmappproject.ui.onboarding.SecondScreen
@@ -27,7 +27,7 @@ class ViewPagerFragment : Fragment() {
             ThirdScreen()
         )
 
-        val adapter = ViewPagerAdapter(
+        val adapter = OnBoardingPagerAdapter(
             fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle

@@ -1,4 +1,4 @@
-package com.example.filmappproject.adapter
+package com.example.filmappproject.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -14,7 +14,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 // │ 22.10.2021                  │
 // └──────────────────────────┘    
 
-class ViewPagerAdapter(
+class OnBoardingPagerAdapter(
     list: ArrayList<Fragment>,
     fm: FragmentManager,
     lifecycle: Lifecycle
