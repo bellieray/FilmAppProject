@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/arrow.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/boskalp.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/checkbox_state.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/checked.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/custom_progress_bar.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/dolukalp.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/done.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/drawable_background_shadow.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/drawable_button_black_transparent.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/drawable_checkbox_state.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/drawable_radius_outline_white.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/drawable_red_transparent.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/focused_on_edit_text.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_arrow.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_back.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_close.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_empty_hearth.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_hearth.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/ic_vector_search.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/search.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/drawable/star.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/font/font.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/activity_main.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/custom_dialog.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/custom_dialog_binding.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/custom_dialog_no_file.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/film_item_layout.xml" value="0.4" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_dashboard.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_film_detail.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_film_search_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_film_search_fragmetn.xml" value="0.275" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_first_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_second_screen.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_splash.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_third.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_third_screen.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/fragment_view_pager.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/item_film_card.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/layout_dashboard_detail.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/layout_searchbar.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/layout/splashscreen.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Eray/Desktop/Kotlin/FilmAppProject/app/src/main/res/menu/anim.xml" value="0.275" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

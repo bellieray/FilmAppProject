@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FilmAppProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filmExpText">It\'s an exciting movie. this film, which was released in 2010, was very much appreciated by the audience. It was also a box office hit.</string>
+    <string name="boardText">Do not waste much time searching for series and movies. Just make one click and it will all come to your screen.</string>
+    <string name="boardText2">You can easily access the most exciting series and movies. You can use the application in a very simple and practical way.</string>
+    <string name="boardText3"> We are sure that you will use it with prying eyes when you are bored. Do not forget to report your complaints.</string>
+</resources>

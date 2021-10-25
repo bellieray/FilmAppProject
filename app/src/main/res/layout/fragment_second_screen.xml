@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.onboarding.SecondScreen">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie2"
+        android:layout_width="410dp"
+        android:layout_height="400dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/womanwatch"
+        />
+
+    <TextView
+        android:id="@+id/secondScreenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boardText2"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/teko"
+        android:padding="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/secondScreenSkip"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#0286EC"
+        android:layout_gravity="center"
+        android:textSize="28sp"
+        android:fontFamily="@font/teko"
+        android:text="Skip All"
+        android:textAllCaps="false"
+        />
+</LinearLayout>
