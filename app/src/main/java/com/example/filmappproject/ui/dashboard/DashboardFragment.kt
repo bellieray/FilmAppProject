@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.FragmentNavigatorExtras
@@ -23,11 +24,11 @@ import com.example.filmappproject.util.submitWithEnterKey
 import com.example.filmappproject.viewmodel.FilmSearchViewModel
 
 class DashboardFragment : Fragment() {
-    private var selectedFilm: Film? = null
     lateinit var mBinding: FragmentDashboardBinding
     private lateinit var viewModel: FilmSearchViewModel
     private val mAdapter: FilmListViewPagerAdapter = FilmListViewPagerAdapter(::setData)
-
+       var selectedFilm: Film? = null
+       var isDialogShowing = false
 
 
     override fun onCreateView(
@@ -46,10 +47,7 @@ class DashboardFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-
-        selectedFilm?.let { setData(it) }
-
-
+            selectedFilm?.let { setData(it) }
     }
     private fun passDataToDetail(model: Film) {
         val action = DashboardFragmentDirections.actionFilmSearchFragmentToFilmDetailFragment(model)
@@ -67,8 +65,11 @@ class DashboardFragment : Fragment() {
         }
 
         submitWithEnterKey(mBinding.searchEdittext, mBinding.imgSearchButton)
+
         if(selectedFilm == null)
+
         viewModel.getData("Hulk")
+
         mBinding.imgSearchButton.setOnClickListener {
             val text = mBinding.searchEdittext.text.toString()
                 it.hideKeyboard()
@@ -87,7 +88,7 @@ class DashboardFragment : Fragment() {
 
         viewModel.movieList.observe(viewLifecycleOwner, ::observeList)
 
-        viewModel.isHaveSameData.observe(viewLifecycleOwner,::observeEmptyData)
+        viewModel.isHaveSameData.observe(viewLifecycleOwner, ::observeEmptyData)
     }
 
     private fun setData(film: Film) {
@@ -104,7 +105,7 @@ class DashboardFragment : Fragment() {
             }
         }
     }
-    var isDialogShowing = false
+
     private fun showDialog() {
         if(!isDialogShowing) {
             isDialogShowing = true
@@ -135,6 +136,7 @@ class DashboardFragment : Fragment() {
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.setOnDismissListener { isDialogShowing = false
             }
+
             mBinding.dialogDismissButton.setOnClickListener{dialog.dismiss()}
         }
     }

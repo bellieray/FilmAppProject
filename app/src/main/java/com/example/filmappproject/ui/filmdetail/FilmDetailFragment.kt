@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.filmappproject.databinding.FragmentFilmDetailBinding
 import com.example.filmappproject.model.Film
+import com.example.filmappproject.ui.dashboard.DashboardFragment
 import com.example.filmappproject.util.getImageFromUrl
 import com.example.filmappproject.viewmodel.FilmSearchViewModel
 
@@ -20,13 +21,11 @@ class FilmDetailFragment : Fragment() {
     private lateinit var mBinding: FragmentFilmDetailBinding
     private val mNavArgs: FilmDetailFragmentArgs by navArgs()
     private lateinit var filmModel: Film
-    private lateinit var viewModel: FilmSearchViewModel
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FilmSearchViewModel::class.java)
         filmModel = mNavArgs.filmModel
         sharedElementEnterTransition = TransitionInflater.from(context).inflateTransition(android.R.transition.move);
     }
@@ -43,7 +42,6 @@ class FilmDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         with(mBinding) {
             model = filmModel
